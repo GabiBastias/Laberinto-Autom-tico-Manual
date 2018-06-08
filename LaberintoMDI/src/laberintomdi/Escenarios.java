@@ -43,15 +43,15 @@ public class Escenarios {
     }
     
     public int columasterico(String[][] matriz) {
-        int fila = 0;
+        int columna = 0;
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[0].length; j++) {
                 if (matriz[i][j].equals("*")) {
-                    fila = j;
+                    columna = j;
                 }
             }
         }
-        return fila;
+        return columna;
     }
     
     int [] arreglo= new int[2];

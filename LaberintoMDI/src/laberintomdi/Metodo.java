@@ -7,7 +7,6 @@ public class Metodo {
     Scanner lector = new Scanner(System.in);
 
     public void Avanzar(String[][] matriz, int filas, int columnas) {
-        String labe = "F";
         int intentos = 0;
         Escenarios x = new Escenarios();
         int []arreglo = x.posX(matriz);
@@ -27,7 +26,7 @@ public class Metodo {
                         columnas++;
                     } else {
                         intentos++;
-                        System.out.println("Has golpeado " + intentos + " de 5 con la pared ");
+                        System.out.println("Has golpeado " + intentos + " de 5 veces con la pared ");
                     }
                 }
 
@@ -39,7 +38,7 @@ public class Metodo {
                         columnas--;
                     } else {
                         intentos++;
-                        System.out.println("Has golpeado " + intentos + " de 5 con la pared ");
+                        System.out.println("Has golpeado " + intentos + " de 5 vecescon la pared ");
                     }
                 }
 
@@ -51,7 +50,7 @@ public class Metodo {
                         filas--;
                     } else {
                         intentos++;
-                        System.out.println("Has golpeado " + intentos + " de 5 con la pared ");
+                        System.out.println("Has golpeado " + intentos + " de 5 veces con la pared ");
                     }
                 }
 
@@ -63,7 +62,7 @@ public class Metodo {
                         filas++;
                     } else {
                         intentos++;
-                        System.out.println("Has golpeado " + intentos + " de 5 con la pared ");
+                        System.out.println("Has golpeado " + intentos + " de 5 veces con la pared ");
                     }
                 }
             }
