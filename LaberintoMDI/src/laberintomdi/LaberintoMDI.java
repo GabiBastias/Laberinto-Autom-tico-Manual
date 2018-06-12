@@ -14,14 +14,16 @@ public class LaberintoMDI {
         int opc;
         int mod = 0;
         do {
-            System.out.println("1.- Laberinto 1");
-            System.out.println("2.- Laberinto 2");
+            System.out.println("1.- Nivel 1.");
+            System.out.println("2.- Nivel 2.");
+            System.out.println("3.- Nivel 3.");
+            System.out.println("4.- Nivel 4.");
             System.out.println("0.- Salir");
             System.out.print("Opción -> ");
             opc = lector.nextInt();
             if (opc != 0) {
-                System.out.println("1.- Manual");
-                System.out.println("2.- Automático");
+                System.out.println("1.- Manual.");
+                System.out.println("2.- Automático.");
                 System.out.print("Opción -> ");
                 mod = lector.nextInt();
             }
@@ -38,10 +40,24 @@ public class LaberintoMDI {
                     }
                     break;
                 case 2:
-                    if (mod == 2) {
-                        metodo.Auto(gesce.escenarioStandard(), gesce.filaasterico(gesce.escenarioStandard()), gesce.columasterico(gesce.escenarioStandard()));
+                    if (mod == 1) {
+                        metodo.Avanzar(esce.escenarioDos(), esce.filaasterico(esce.escenarioDos()), esce.columasterico(esce.escenarioDos()));
                     }else{
-                        metodo.Avanzar(gesce.escenarioStandard(), gesce.filaasterico(gesce.escenarioStandard()), gesce.columasterico(gesce.escenarioStandard()));
+                        metodo.Auto(esce.escenarioDos(), esce.filaasterico(esce.escenarioDos()), esce.columasterico(esce.escenarioDos()));
+                    }
+                    break;
+                case 3:
+                    if (mod == 1) {
+                        metodo.Avanzar(esce.escenarioTres(), esce.filaasterico(esce.escenarioTres()), esce.columasterico(esce.escenarioTres()));
+                    }else{
+                        metodo.Auto(esce.escenarioTres(), esce.filaasterico(esce.escenarioTres()), esce.columasterico(esce.escenarioTres()));
+                    }
+                    break;
+                case 4:
+                    if (mod == 1) {
+                        metodo.Avanzar(esce.escenarioCuatro(), esce.filaasterico(esce.escenarioCuatro()), esce.columasterico(esce.escenarioCuatro()));
+                    }else{
+                        metodo.Auto(esce.escenarioCuatro(), esce.filaasterico(esce.escenarioCuatro()), esce.columasterico(esce.escenarioCuatro()));
                     }
                     break;
                 default:

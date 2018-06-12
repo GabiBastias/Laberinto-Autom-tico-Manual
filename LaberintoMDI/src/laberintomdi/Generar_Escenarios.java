@@ -21,6 +21,10 @@ public class Generar_Escenarios {
     
     Scanner lector = new Scanner(System.in);
     
+    
+    
+    
+    
     public String[][] escenarioStandard() {
         String[][] matriz = {
             {"|", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "|"},
