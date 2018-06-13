@@ -1,3 +1,6 @@
+/* Esta clase no puedo ser terminada y tenia como objetivo la generación automática de niveles,
+por cuestiones de tiempo y desconocimiento decidimos no incluirla.*/
+
 package laberintomdi;
 
 import java.util.Scanner;
